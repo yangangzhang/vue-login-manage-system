@@ -37,7 +37,7 @@
 	|           |-- Home.vue           	 // 公共路由入口
 	|           |-- Sidebar.vue          // 公共左边栏
 	|		|-- page                   	 // 主要路由页面
-	|           |-- Identify.vue         // 图形验证码
+	|           |-- Identify.vue         // 图形验证码（登录的图形验证码，基于canvas）
 	|           |-- Login.vue            // 登录
 	|           |-- ModifyPassword.vue   // 修改密码
 	|           |-- ModifyUser.vue       // 修改用户
