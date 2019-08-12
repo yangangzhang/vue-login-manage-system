@@ -1,3 +1,7 @@
+# 个人记录 #
+1. 首先注意接口，如果冲突，更改服务端和客户端接口
+2. 代码有的需要更改，我已经在代码中更改
+
 # manage-system #
 基于Vue.js 2.x系列 + Element UI + Node.js + Mysql的后台管理系统解决方案。
 
@@ -72,3 +76,20 @@
 
 	// 执行构建命令，生成的dist文件夹放在服务器下即可访问
 	npm run build
+
+## 数据库 ##
+```
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `account` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `card` varchar(100) NOT NULL,
+  `birth` date NOT NULL,
+  `sex` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8
+直接用Navicat，省去你手动创建表
+```
