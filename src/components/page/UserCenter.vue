@@ -50,7 +50,7 @@
 		methods:{
 			getUserData() {
 				const self = this;	
-				let username = localStorage.getItem('ms_user').name;			
+				let username = sessionStorage.getItem('ms_user').name;			
 				self.$http.get('/api/user/getUser',{name: username}).then(function(response) {
 					console.log(response);
 					let result = response.data[0];
