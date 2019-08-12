@@ -122,7 +122,6 @@ router.post('/modifyPassword', (req, res) => {
     console.log(params);
     if (params.id) {
         sql_modify +=  " password = '" + params.pass +
-                        "',repeatPass = '" + params.checkPass +
                         "' where id ='"+ params.id + "'";
     }
     conn.query(sql_modify, params.id, function(err, result) {
