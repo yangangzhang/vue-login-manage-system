@@ -78,6 +78,7 @@
                                 self.$router.push('/readme');
                                 sessionStorage.setItem('ms_username',self.ruleForm.name);
                                 sessionStorage.setItem('ms_user',JSON.stringify(self.ruleForm));
+                                sessionStorage.setItem('ms_userId',response.data[0].id)
                                 console.log(JSON.stringify(self.ruleForm));  
                             }                            
                         }).then((error) => {
